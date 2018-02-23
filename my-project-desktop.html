@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> My Project </title>
+</head>
+<body>
+        <header>
+            <img src="logo.png" alt="logo" >
+            <img src="linkedin.svg" alt="linkedin icon" >
+            <img src="github.svg" alt="github icon" >
+        </header>
+        <br>
+        <nav>
+            <ol>
+                <li> <a href="/index"> Home </a> </li>
+                <li> <a href="/link1"> Projects </a> </li>
+                <li> <a href="/link2"> About </a> </li>
+                <li> <a href="/link3"> Contact </a> </li>
+            </ol>
+            <img src="paper-plane.png" alt="contact icon" >
+            <br>
+        </nav>
+        <!-- Лого, сайдбар та хедер закріплені під-час прокрутки сайту -->
+        <br>
+        <div class="Home Page">
+            <h1> Kseniia Nedilko </h1>
+            <img src="my-photo.PNG" alt="photo for the home page">
+            <p> Front End Web developer from Lviv </p>
+            <h5> Scroll dow to see projects </h5> 
+            <img src="down-arrow.png" alt="down-arrow icon" >
+        </div>
+        <br>
+        <div class="Projects">
+            <h1> Projects </h1>
+            <h3> My Portfolio </h3>
+            <p> Learning project for creating personal portfolio site using bold colors, grids and fancy elements</p>
+            <img src="portfolio-photo.png" alt="portfolio-photo">
+            <br>
+            <a href="/link4"> Visit Site </a>
+            <h5> More comming soon... </h5>
+        </div>
+        <br>
+        <div class="About Me">
+            <h1> About Me </h1>
+            <p> I’m looking for full-time opportunities in Lviv. 
+            <br>
+            <p> I’m a Ukrainian web developer specialised in Design with 5 years of experience. I had the chance to work with amazing teams in some beautiful agencies and startups. Before that, I spent 10 years learning best practices in Graphic and Digital Design at Estienne and Gobelins schools in Paris. </p>
+            <form>
+                <input type="button" value="Download CV" name="download cv"/>
+            </form>
+        </div>
+        <br>
+        <div class="Contact Me Form">
+            <h1> Contact Me! </h1>
+            <br>
+            <form  action="https://formspree.io/kseniasvitova@gmail.com" method="POST">
+                <label> Name:
+                <br>
+                <input type="text" placeholder="Your name" name="client-name" ><br>
+                </label>
+                <br>
+                <label> Email:
+                <br>
+                <input type="Email" placeholder="Your email" name="client-email" ><br>
+                </label>
+                <br>
+                <label> Your Message:
+                <br>
+                <textarea rows="10" cols="45" name="text" placeholder="Message"></textarea>
+                <br>
+                </label>
+                <br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+</body>
+</html>
