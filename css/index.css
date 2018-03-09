@@ -1,5 +1,22 @@
-.img {
-    position: relative;
-    top: 0;
-    left: -200px;
+ .jumbotron {
+    background-color: white;
+    font-family: 'Roboto Mono';
+    max-width: 900px;
+    text-align: center;
+}
+
+ .nav {
+    margin-top: 50px;
+    max-width: 80px;   
+ }
+ 
+ .img {
+    position: absolute;
+    margin: 0;
+    max-width: 70px;
+ }
+
+#logo {
+    position: static;
+    margin: 0;
 }
