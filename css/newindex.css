@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+.header {
+    position: static;
+    left: 367px;
+    text-align: right;
+    margin-top: 0;
+}
+.sidebar {
+    margin-top: -25px;
+    position: fixed;
+    width: 39px;
+    height: 1020px;
+    text-align: center;
+    background-color: #203239;
+    font-family: 'Roboto Mono'
+}
+#logo {
+    width: 39px;
+    height: 39px;
+}
+#main-image {
+    float: right;
+    margin-left: 309px;
+}
+.main-text{
+    font-family: 'Roboto Mono';
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 39px;
+    width: 270px;
+    color: #203239;
+}
+.secondary-text {
+    margin-left: 39px;
+}

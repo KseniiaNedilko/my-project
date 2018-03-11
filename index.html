@@ -8,46 +8,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <title> My Project </title>
+    <title> Kseniia Nedilko Project </title>
 </head>
 <body> 
-        <nav>
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                  <a class="nav-link" id="v-pills-projects-tab" data-toggle="pill" href="#v-pills-projects" role="tab" aria-controls="v-pills-projects" aria-selected="false">Projects</a>
-                  <a class="nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-about" aria-selected="false">About</a>
-                  <a class="nav-link" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</a>
-                </div>
-                <div class="tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-                  <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">...</div>
-                  <div class="tab-pane fade" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">...</div>
-                  <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">...</div>
-                </div>
-            <img src="img/paper-plane.png" alt="contact icon" >
-            <img id="logo" src="img/logo.png" alt="logo">
-        </nav>
+    
+       <div class="main">
+            <div class="nav d-flex flex-column justify-content-between">
+                          <img  id="logo" src="img/logo.png" alt="logo">
+                              <div class="d-flex flex-column justify-content-center">
+                                <a class="nav-link active smooth" href="#home">01</a>
+                                <a class="nav-link smooth" href="#project">02</a>
+                                <a class="nav-link smooth" href="#about">03</a>
+                                </div>
+                                    <div>
+                                        <img class="icon nav-link smooth" href="#contact" src="img/contact-icon.svg" alt="contact icon">
+                                    </div>
+                              </div>
+            </div>
+            <header class="d-flex justify-content-end align-items-center">
+                <img class="header-icon" src="img/linkedin.svg" alt="linkedin icon">
+                <img class="header-icon" src="img/github.svg" alt="github icon">
+            </header>
+            
+        <div class="content d-flex flex-column align-items-center">
+        <div class="home-page page" id="home">
+            <div class="text">
+                <h1 class="main-text"> Kseniia <br> Nedilko</h1>
+                    <hr>
+                    <p class="secondary-text">Front End Web developer from Lviv</p>
+                    </div>
+                <p class="third-text">scroll to see projects</p> <img id="arrow" src="img/down-arrow.png" alt="down-arrow icon"> 
+                <img class="main-photo" src="img/ksenia-nedilko-photo.png" alt="ksenia-nedilko-photo">
+            </div>
         
-        <header class="img">
-            <img src="img/linkedin.svg" alt="linkedin icon" >
-            <img src="img/github.svg" alt="github icon" >
-        </header>
-        
-        <div class="home-page">
-            <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4"> Kseniia <br> Nedilko</h1>
-                <img src="img/ksenia-nedilko-photo.png" alt="ksenia-nedilko-photo">
-                <p class="lead">Front End Web developer from Lviv</p>
-            </div>
-            </div>
-            <h3> My projects </h3> 
-            <img src="img/down-arrow.png" alt="down-arrow icon" >
-            <div id="ksenia-nedilko-photo">
-                
-            </div>
-        </div>
-        <div class="projects">
+        <div class="project-page page" id="project">
             <h1> Projects </h1>
             <h3> My Portfolio </h3>
             <img src="img/portfolio-photo.png" alt="portfolio-photo">
@@ -55,29 +49,35 @@
             <a href="/link4"> Visit Site </a>
             <h4> More comming soon... </h4>
         </div>
-        <div class="about-me">
+        
+        <div class="about-page page" id="about">
             <h1> About Me </h1>
             <p> I’m looking for full-time opportunities in Lviv. 
             <br>
             I’m a Ukrainian web developer specialised in Design with 5 years of experience. I had the chance to work with amazing teams in some beautiful agencies and startups. Before that, I spent 10 years learning best practices in Graphic and Digital Design at Estienne and Gobelins schools in Paris. </p>
             <br>
         </div>
-        <div class="contact-me-form">
-            <form  action="https://formspree.io/kseniasvitova@gmail.com" method="POST">
-                <label> Name: <br>
-                    <input type="text" placeholder="Your name" name="client-name" ><br>
-                </label> <br>
-                <label> Email: <br>
-                    <input type="Email" placeholder="Your email" name="client-email" ><br>
-                </label> <br>
-                <label> Your Message: <br>
-                    <textarea rows="10" cols="45" name="text" placeholder="Message"></textarea>
-                <br>
-                </label><br> 
-                    <input type="submit" value="Send">
-             </form>
-        </div>
         
+            <div class="contact-page page" id="contact">
+                <!--<a href="#01" class="smooth">-->
+                <form  action="https://formspree.io/kseniasvitova@gmail.com" method="POST">
+                    <label> Name: <br>
+                        <input type="text" placeholder="Your name" name="client-name" ><br>
+                    </label> <br>
+                    <label> Email: <br>
+                        <input type="Email" placeholder="Your email" name="client-email" ><br>
+                    </label> <br>
+                    <label> Your Message: <br>
+                        <textarea rows="10" cols="45" name="text" placeholder="Message"></textarea>
+                    <br>
+                    </label><br> 
+                        <input type="submit" value="Send">
+                 </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
