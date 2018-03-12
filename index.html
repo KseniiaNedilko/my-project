@@ -26,41 +26,50 @@
                               </div>
             </div>
             <header class="d-flex justify-content-end align-items-center">
-                <img class="header-icon" src="img/linkedin.svg" alt="linkedin icon">
-                <img class="header-icon" src="img/github.svg" alt="github icon">
+                <img class="header-icon" href="https://www.linkedin.com/feed/" src="img/linkedin.svg" alt="linkedin icon">
+                <img class="header-icon" href="https://github.com/KseniiaNedilko" src="img/github.svg" alt="github icon">
             </header>
             
-        <div class="content d-flex flex-column align-items-center">
-        <div class="home-page page" id="home">
-            <div class="text">
-                <h1 class="main-text"> Kseniia <br> Nedilko</h1>
-                    <hr>
-                    <p class="secondary-text">Front End Web developer from Lviv</p>
+            <div class="home-content d-flex flex-column align-items-center">
+                <div class=" d-flex home-page page" id="home">
+                    <div class="home-text">
+                        <h1 class="main-text"> Kseniia <br> Nedilko</h1>
+                            <hr>
+                            <p class="secondary-text">Front End Web developer from Lviv</p>
                     </div>
-                <p class="third-text">scroll to see projects</p> <img id="arrow" src="img/down-arrow.png" alt="down-arrow icon"> 
-                <img class="main-photo" src="img/ksenia-nedilko-photo.png" alt="ksenia-nedilko-photo">
-            </div>
-        
+                        <p class="third-text">scroll to see projects</p> <img id="arrow" src="img/down-arrow.png" alt="down-arrow icon"> 
+                        <img class="main-photo" src="img/ksenia-nedilko-photo.png" alt="ksenia-nedilko-photo">
+                </div>
+            
+        <div class="project-content d-flex">
         <div class="project-page page" id="project">
-            <h1> Projects </h1>
-            <h3> My Portfolio </h3>
-            <img src="img/portfolio-photo.png" alt="portfolio-photo">
-            <p> Learning project for creating personal portfolio site using bold colors, grids and fancy elements</p>
-            <a href="/link4"> Visit Site </a>
-            <h4> More comming soon... </h4>
+            <div class="project-text d-flex flex-column align-items-left">
+                        <h1 class="project-header">Projects</h1>
+                        <hr id="hr-project">
+                            <div class="center-text">
+                                <h3 class="project-inner"> My Portfolio </h3>
+                                <p class="project-p"> Learning project for creating personal portfolio site using bold colors, grids and fancy elements</p>
+                                <a class="visit-site" href="https://my-project-uboo.c9users.io/index.html">Visit Site</a>
+                            </div>
+                            <img id="portfolio-photo" src="img/portfolio-photo.png" alt="portfolio-photo">
+                        <h4 class="project-end">More comming soon...</h4>
+            </div>
+        </div>
         </div>
         
-        <div class="about-page page" id="about">
-            <h1> About Me </h1>
-            <p> I’m looking for full-time opportunities in Lviv. 
-            <br>
-            I’m a Ukrainian web developer specialised in Design with 5 years of experience. I had the chance to work with amazing teams in some beautiful agencies and startups. Before that, I spent 10 years learning best practices in Graphic and Digital Design at Estienne and Gobelins schools in Paris. </p>
-            <br>
+        
+        
+        <div class="about-page page d-flex flex-column align-items-left" id="about">
+            <div class="about-content">
+                <h1 class="about-header"> About Me </h1>
+                <p class="about-inner"> I’m looking for full-time opportunities in Lviv. 
+                <p class="about-end">I’m a Ukrainian web developer specialised in Design with 5 years of experience. I had the chance to work with amazing teams in some beautiful agencies and startups. Before that, I spent 10 years learning best practices in Graphic and Digital Design at Estienne and Gobelins schools in Paris. </p>
+            </div>
         </div>
         
-            <div class="contact-page page" id="contact">
+            <div class="contact-page d-flex page" id="contact">
                 <!--<a href="#01" class="smooth">-->
-                <form  action="https://formspree.io/kseniasvitova@gmail.com" method="POST">
+                <form  class="contact-form" action="https://formspree.io/kseniasvitova@gmail.com" method="POST">
                     <label> Name: <br>
                         <input type="text" placeholder="Your name" name="client-name" ><br>
                     </label> <br>
@@ -74,9 +83,6 @@
                         <input type="submit" value="Send">
                  </form>
                  </div>
-            </div>
-        </div>
-    </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
