@@ -1,35 +1,15 @@
-.body {
-    background-color: #f80e0b;
-    opacity: 0.4;
-}
-.main {
-    position: relative;
+.main {;
+    position: absolute;
     font-family: 'Roboto Mono';
-    margin: auto;
     width: 100%;
 }
-.line {
-    border-left: 2px solid grey; /* Параметры линии */ 
- /* Отступ слева */
-    padding-left: 10px; /* Расстояние от линии до текста */ 
-}
-.line1 {
-    border-right: 2px solid grey; /* Параметры линии */ 
-    padding-right: 10px; /* Отступ слева */
-}
-.rectangle1 {
-    position: relative;
-    width: 150px;
-	height: 30px;
-    background: #fdc805;
-    opacity: 0.4;
-    border-radius: 50px;
-    transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
-}
-#axis:hover .move-right{
-    transform: translate(350px,0);
-    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+.bordered td,
+.bordered th {
+    position: fixed;
+    height: 100vh;
+    border-left: 1px solid #ccc;
+    text-align: left;
+    padding: 50px;
 }
 .header-icon {
     width: 30px;
@@ -42,7 +22,6 @@ header {
 }
 .nav {
     position: fixed;
-    z-index: 5;
     width: 60px;
     height: 100%;
     background-color: #203239;
@@ -62,7 +41,6 @@ header {
 .home-page {
     margin-bottom: 5%;
     font-family: 'Roboto Mono';
-    background-color: lemonchiffon;
 }
 .home-header {
     font-size: 75px;
@@ -105,7 +83,6 @@ header {
     font-size: 15px;
 }
 .about-page {
-    background-color: lightsalmon;
     font-family: 'Roboto Mono';
 }
 .about-header {
@@ -129,7 +106,6 @@ header {
 }
 .contact-form {
     font-family: 'Roboto Mono';
-    background-color: olivedrab;
 }
 .contact-header {
     margin-top: 10%;
@@ -142,4 +118,8 @@ header {
     margin-bottom: 25px;
     height: 5px;
     background-color: #203239;
+}
+.nav .d-flex .flex-column .justify-content-between .contact-icon:hover {
+  background: #fbf8e9;
+  transition: all 0.1s ease-in-out;
 }
